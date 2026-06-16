@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://jsdelivr.net" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Projeto Rick and Morty</title>
+</head>
+
+<body>
+
+    <script src="https://jsdelivr.net"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
+
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Logo / Título -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./assets/logo.png" alt="Logo" width="40" height="40" class="me-2 rounded-circle">
+                Rick & Morty Explorer
+            </a>
+
+            <!-- Botão mobile (hamburger) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Itens da navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Personagens</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Favoritos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+
+<main class="container my-4">
+    <!-- Título da seção -->
+    <h2 class="mb-4 text-center">Personagens</h2>
+
+    <!--Formulário de Pesquisa-->
+<form id="search-form" class="mb-4">
+    <div class="input-group">
+        <input type="text" id="search-input" class="form-control" placeholder="Buscar">
+        <button class="btn btn-primary">Buscar</button>
+    </div>
+</form>
+
+    <!-- Grid de cards -->
+       <div class="row g-4" id="characters-container"></div>
+
+
+        <!-- Card exemplo 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100">
+                <img src="https://picsum.photos/300" class="card-img-top" alt="Personagem">
+                <div class="card-body">
+                    <h5 class="card-title">Nome do Personagem</h5>
+                    <p class="card-text">Espécie: Humano</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card exemplo 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100">
+                <img src="https://picsum.photos/300" class="card-img-top" alt="Personagem">
+                <div class="card-body">
+                    <h5 class="card-title">Outro Personagem</h5>
+                    <p class="card-text">Espécie: Alien</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
